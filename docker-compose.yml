@@ -51,17 +51,17 @@ services:
       - ConnectionStrings__DefaultConnection=Server=db;Database=IPMProDB;User Id=sa;Password=Dung@28112005;TrustServerCertificate=True;MultipleActiveResultSets=true
       - ConnectionStrings__RedisConnection=redis:6379,password=redis123
       - ConnectionStrings__HangfireConnection=Server=db;Database=IPMProDB;User Id=sa;Password=Dung@28112005;TrustServerCertificate=True
-      - Jwt__SecretKey=YourSuperSecretKeyThatIsAtLeast32CharactersLong!
+      - Jwt__SecretKey=
       - Jwt__ExpiresInMinutes=60
       - Jwt__Issuer=https://localhost:7136
       - Jwt__Audience=https://localhost:7136
       - Database__TablePrefix=123
-      - Gemini__ApiKey=AIzaSyAp5pshKNe3UDdHWOqk5ZU69qXV1cAmizY
+      - Gemini__ApiKey=
       - Gemini__Model=gemini-3.0-pro
       - Email__SmtpServer=smtp.gmail.com
       - Email__SmtpPort=587
-      - Email__FromEmail=ltd28112005@gmail.com
-      - Email__FromPassword=cpth fgac mmcy trsu
+      - Email__FromEmail=
+      - Email__FromPassword=
       - Email__EnableSsl=true
       - App__FrontendUrl=http://web:80
     ports:
